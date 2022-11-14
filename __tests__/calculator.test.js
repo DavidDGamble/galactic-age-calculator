@@ -29,7 +29,12 @@ describe('UserInfo', () => {
     expect(userInfo.jupiter()).toEqual(2)
   });
 
-  test("should return user's life expectancy.", () => {
+  test("should return user's life expectancy when male and nonsmoker.", () => {
     expect(userInfo.lifeExp()).toEqual(40)
+  });
+
+  test("should return user's life expectancy when female and nonsmoker.", () => {
+    userInfo = new UserInfo(35, 'female', false);
+    expect(userInfo.lifeExp()).toEqual(45);
   });
 });
