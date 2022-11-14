@@ -5,19 +5,19 @@ export default class UserInfo {
     this.smoker = smoker;
   }
 
-  mercury() {
+  mercury(age) {
     return Math.floor(this.age / 0.24);
   }
 
-  venus() {
+  venus(age) {
     return Math.floor(this.age / 0.62);
   }
 
-  mars() {
+  mars(age) {
     return Math.floor(this.age / 1.88);
   }
 
-  jupiter() {
+  jupiter(age) {
     return Math.floor(this.age / 11.86);
   }
 
@@ -35,10 +35,6 @@ export default class UserInfo {
   }
 
   leftOnMercury() {
-    if (this.gender === 'male') {
-      return 312 - this.mercury();
-    } else {
-      return 333 - this.mercury();
-    }
+    return Math.floor(this.lifeExp() / 0.24)
   }
 }
