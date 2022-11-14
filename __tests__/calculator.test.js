@@ -30,6 +30,6 @@ describe('UserInfo', () => {
   });
 
   test("should return user's life expectancy.", () => {
-    expect(userInfo.lifeExp().toEqual(40))
+    expect(userInfo.lifeExp()).toEqual(40)
   });
 });
