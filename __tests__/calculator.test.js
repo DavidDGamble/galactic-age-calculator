@@ -56,6 +56,6 @@ describe('UserInfo', () => {
   });
 
   test("should return user's years left on jupiter.", () => {
-    expect(userInfo.leftOnJupiter()).toEqual(4);
+    expect(userInfo.leftOnJupiter()).toEqual(3);
   });
 });
