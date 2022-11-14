@@ -5,19 +5,19 @@ export default class UserInfo {
     this.smoker = smoker;
   }
 
-  mercury(age) {
+  mercury() {
     return Math.floor(this.age / 0.24);
   }
 
-  venus(age) {
+  venus() {
     return Math.floor(this.age / 0.62);
   }
 
-  mars(age) {
+  mars() {
     return Math.floor(this.age / 1.88);
   }
 
-  jupiter(age) {
+  jupiter() {
     return Math.floor(this.age / 11.86);
   }
 
@@ -29,16 +29,16 @@ export default class UserInfo {
       yearsLeft = 80 - this.age;
     }
     if (this.smoker) {
-      yearsLeft -= 10 
+      yearsLeft -= 10;
     }
     return yearsLeft;
   }
 
   leftOnMercury() {
-    return Math.floor(this.lifeExp() / 0.24)
+    return Math.floor(this.lifeExp() / 0.24);
   }
 
   leftOnVenus() {
-    
+    return Math.floor(this.lifeExp() / 0.62);
   }
 }
