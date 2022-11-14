@@ -33,4 +33,8 @@ export default class UserInfo {
     }
     return yearsLeft;
   }
+
+  leftOnMercury() {
+    
+  }
 }
