@@ -37,19 +37,35 @@ export default class UserInfo {
   }
 
   leftOnMercury() {
-    return Math.floor(this.lifeExp() / 0.24);
+    if (this.lifeExp() >= 0) {
+      return `You have ${Math.floor(this.lifeExp() / 0.24)} years left on Mercury!`
+    } else {
+      return `You have lived ${Math.floor((this.lifeExp() * -1) / 0.24)} years past your life expectancy on Mercury!`
+    }
   }
 
   leftOnVenus() {
-    return Math.floor(this.lifeExp() / 0.62);
+    if (this.lifeExp() >= 0) {
+      return `You have ${Math.floor(this.lifeExp() / 0.62)} years left on Venus!`
+    } else {
+      return `You have lived ${Math.floor((this.lifeExp() * -1) / 0.62)} years past your life expectancy on Venus!`
+    }
   }
 
   leftOnMars() {
-    return Math.floor(this.lifeExp() / 1.88);
+    if (this.lifeExp() >= 0) {
+      return `You have ${Math.floor(this.lifeExp() / 1.88)} years left on Mars!`
+    } else {
+      return `You have lived ${Math.floor((this.lifeExp() * -1) / 1.88)} years past your life expectancy on Mars!`
+    }
   }
 
   leftOnJupiter() {
-    return Math.floor(this.lifeExp() / 11.86);
+    if (this.lifeExp() >= 0) {
+      return `You have ${Math.floor(this.lifeExp() / 11.86)} years left on Jupiter!`
+    } else {
+      return `You have lived ${Math.floor((this.lifeExp() * -1) / 11.86)} years past your life expectancy on Jupiter!`
+    }
   }
 }
 

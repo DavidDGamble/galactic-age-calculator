@@ -54,18 +54,38 @@ describe('UserInfo', () => {
   });
 
   test("should return user's years left on mercury.", () => {
-    expect(userInfo.leftOnMercury()).toEqual(166);
+    expect(userInfo.leftOnMercury()).toEqual("You have 166 years left on Mercury!");
   });
 
   test("should return user's years left on venus.", () => {
-    expect(userInfo.leftOnVenus()).toEqual(64);
+    expect(userInfo.leftOnVenus()).toEqual("You have 64 years left on Venus!");
   });
 
   test("should return user's years left on mars.", () => {
-    expect(userInfo.leftOnMars()).toEqual(21);
+    expect(userInfo.leftOnMars()).toEqual("You have 21 years left on Mars!");
   });
 
   test("should return user's years left on jupiter.", () => {
-    expect(userInfo.leftOnJupiter()).toEqual(3);
+    expect(userInfo.leftOnJupiter()).toEqual("You have 3 years left on Jupiter!");
+  });
+
+  test("should return user's years left on mercury.", () => {
+    userInfo = new UserInfo(80, 'male', false);
+    expect(userInfo.leftOnMercury()).toEqual("You have lived 20 years past your life expectancy on Mercury!");
+  });
+
+  test("should return user's years left on venus.", () => {
+    userInfo = new UserInfo(80, 'male', false);
+    expect(userInfo.leftOnVenus()).toEqual("You have lived 8 years past your life expectancy on Venus!");
+  });
+
+  test("should return user's years left on mars.", () => {
+    userInfo = new UserInfo(80, 'male', false);
+    expect(userInfo.leftOnMars()).toEqual("You have lived 2 years past your life expectancy on Mars!");
+  });
+
+  test("should return user's years left on jupiter.", () => {
+    userInfo = new UserInfo(80, 'male', false);
+    expect(userInfo.leftOnJupiter()).toEqual("You have lived 0 years past your life expectancy on Jupiter!");
   });
 });
