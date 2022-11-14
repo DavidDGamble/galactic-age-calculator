@@ -35,6 +35,10 @@ export default class UserInfo {
   }
 
   leftOnMercury() {
-    
+    if (this.gender === 'male') {
+      return 312 - this.mercury();
+    } else {
+      return 333 - this.mercury();
+    }
   }
 }
