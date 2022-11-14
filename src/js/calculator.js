@@ -37,4 +37,8 @@ export default class UserInfo {
   leftOnMercury() {
     return Math.floor(this.lifeExp() / 0.24)
   }
+
+  leftOnVenus() {
+    
+  }
 }
