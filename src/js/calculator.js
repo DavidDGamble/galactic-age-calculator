@@ -45,4 +45,8 @@ export default class UserInfo {
   leftOnMars() {
     return Math.floor(this.lifeExp() / 1.88);
   }
+
+  leftOnJupiter() {
+    
+  }
 }
