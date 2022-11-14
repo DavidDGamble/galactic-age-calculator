@@ -6,6 +6,6 @@ export default class UserInfo {
   }
 
   mercury() {
-    
+    return Math.floor(this.age / 0.24);
   }
 }
