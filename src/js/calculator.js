@@ -22,6 +22,15 @@ export default class UserInfo {
   }
 
   lifeExp() {
-    
+    let yearsLeft = 0;
+    if (this.gender === 'male') {
+      yearsLeft = 75 - this.age;
+    } else {
+      yearsLeft = 80 - this.age;
+    }
+    if (this.smoker) {
+      yearsLeft -= 10 
+    }
+    return yearsLeft;
   }
 }
