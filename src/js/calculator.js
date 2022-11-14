@@ -14,6 +14,6 @@ export default class UserInfo {
   }
 
   mars() {
-    
+    return Math.floor(this.age / 1.88);
   }
 }
