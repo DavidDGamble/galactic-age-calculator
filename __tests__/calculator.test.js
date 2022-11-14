@@ -43,6 +43,12 @@ describe('UserInfo', () => {
     expect(userInfo.lifeExp()).toEqual(35);
   });
 
+  test("should return user's life expectancy when user has lived past expactancy.", () => {
+    userInfo = new UserInfo(80, 'male', true);
+    expect(userInfo.lifeExp()).toEqual(-5);
+  });
+
+
   test("should return user's years left on mercury.", () => {
     expect(userInfo.leftOnMercury()).toEqual(166);
   });

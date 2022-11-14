@@ -28,9 +28,11 @@ export default class UserInfo {
     } else {
       yearsLeft = 80 - this.age;
     }
-    if (this.smoker) {
+    if (this.smoker && yearsLeft >= 10) {
       yearsLeft -= 10;
-    }
+    } else if (this.smoker && yearsLeft < 10 && yearsLeft > 0) {
+      yearsLeft = 0;
+    } 
     return yearsLeft;
   }
 
