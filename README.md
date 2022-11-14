@@ -1,45 +1,46 @@
-## Setup for template
-* _$ rm -r .git_
-* _$ git init_
-* _$ git remote add dg [GitHub Repository]_
-* _$ git add .gitignore_
-* _$ git commit -m "Add .gitignore to project."_
-* _$ git push dg main_
-* _$ npm init -y_
-* _$ npm install_
-* _$ npm run build_
+# _Galactic Age Calculator_
 
-# _{Application Name}_
+#### By: _**David Gamble**_
 
-#### By: _**{List of contributors}**_
-
-#### _{Brief description of application}_
+#### _Calculates user's age and year left to live on 4 planets._
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _@babel/core_
+* _@babel/plugin-transform-modules-commonjs_
+* _clean-webpack-plugin_
+* _css-loader_
+* _eslint_
+* _eslint-webpack-plugin_
+* _file-loader_
+* _gh-pages_
+* _html-loader_
+* _html-webpack-plugin_
+* _jest_
+* _style-loader_
+* _webpack_
+* _webpack-cli_
+* _webpack-dev-server_
+* _bootstrap_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This website will take a user's age, gender, and whether or not they are a smoker and let them know their age on Mercury, Venus, Mars, and Jupiter as well as how many more years they have left to live on each planet._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _clone the repository to your desktop from: https://github.com/DavidDGamble/galactic-age-calculator.git_
+* _enter command in terminal: $ npm init -y_
+* _enter command in terminal: $ npm install_
+* _enter command in terminal: $ npm run build_
+* _enter command in terminal: $ npm run start_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs._
 
 ## License
 
