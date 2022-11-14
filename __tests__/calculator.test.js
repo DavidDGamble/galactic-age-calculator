@@ -37,4 +37,9 @@ describe('UserInfo', () => {
     userInfo = new UserInfo(35, 'female', false);
     expect(userInfo.lifeExp()).toEqual(45);
   });
+
+  test("should return user's life expectancy when female and smoker.", () => {
+    userInfo = new UserInfo(35, 'female', true);
+    expect(userInfo.lifeExp()).toEqual(35);
+  });
 });
