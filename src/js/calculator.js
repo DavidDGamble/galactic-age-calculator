@@ -1,5 +1,7 @@
 export default class UserInfo {
-  constructor() {
-    
+  constructor(age, gender, smoker) {
+    this.age = age;
+    this.gender = gender;
+    this.smoker = smoker;
   }
 }
