@@ -28,4 +28,8 @@ describe('UserInfo', () => {
   test("should return user's age in jupiter years.", () => {
     expect(userInfo.jupiter()).toEqual(2)
   });
+
+  test("should return user's life expectancy.", () => {
+    expect(userInfo.lifeExp().toEqual(40))
+  });
 });
