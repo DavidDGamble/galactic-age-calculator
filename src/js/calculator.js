@@ -4,4 +4,8 @@ export default class UserInfo {
     this.gender = gender;
     this.smoker = smoker;
   }
+
+  mercury() {
+    
+  }
 }
