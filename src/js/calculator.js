@@ -18,6 +18,6 @@ export default class UserInfo {
   }
 
   jupiter() {
-    
+    return Math.floor(this.age / 11.86);
   }
 }
