@@ -42,4 +42,8 @@ describe('UserInfo', () => {
     userInfo = new UserInfo(35, 'female', true);
     expect(userInfo.lifeExp()).toEqual(35);
   });
+
+  test("should return user's years left on mercury.", () => {
+    expect(userInfo.leftOnMercury().toEqual(167));
+  });
 });
