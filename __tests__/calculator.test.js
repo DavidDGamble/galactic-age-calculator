@@ -50,4 +50,8 @@ describe('UserInfo', () => {
   test("should return user's years left on venus.", () => {
     expect(userInfo.leftOnVenus()).toEqual(64);
   });
+
+  test("should return user's years left on mars.", () => {
+    expect(userInfo.leftOnMars()).toEqual(21);
+  });
 });
