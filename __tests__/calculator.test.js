@@ -18,6 +18,10 @@ describe('UserInfo', () => {
   });
 
   test("should return user's age in venus years.", () => {
-    expect(user.Info.venus()).toEqual(56);
+    expect(userInfo.venus()).toEqual(56);
+  });
+
+  test("should return user's age in mars years.", () => {
+    expect(userInfo.mars()).toEqual(18);
   });
 });
