@@ -12,17 +12,17 @@
       <input type="text" id="age" name="age">
       <div class="gender">
         <p><strong>Gender</strong></p>
-        <label for="male">male: </label>
-        <input name="male" type="checkbox" value="male">
-        <label for="female">female: </label>
-        <input name="female" type="checkbox" value="female"> 
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" svalue="female">
+        <label for="female">female</label>
       </div>
       <div class="smoker">
         <p><strong>Smoker</strong></p>
-        <label for="yes">yes: </label>
-        <input name="yes" type="checkbox" value="true">
-        <label for="no">no: </label>
-        <input name="no" type="checkbox" value="false"> 
+        <input type="radio" id="yes" name="smoker" value="true">
+        <label for="yes">yes</label>
+        <input type="radio" id="no" name="smoker" value="false"> 
+        <label for="no">no</label>
       </div>
       <br>
       <button type="submit" id="submit">Submit</button>
